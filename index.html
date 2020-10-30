@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <input type="text" maxlength="10" class="result">
+        <h2>Please Press On to Start</h2>
+        <div class="mainbody">
+            <div class="0row ">
+                <input type="button" id="btn" value="C" onclick="clearresult()">
+                <input type="button" id="btn" value="+/-">
+                <input type="button" id="btn" value="%" onclick="insert('*(1/100)')">
+                <input type="button" class="onoff" id="" value="On/Off">
+            </div>
+         <div class="1strow row">
+            <input type="button" id="btn" value="9" onclick="insert(9) ">
+            <input type="button" id="btn" value="8" onclick="insert(8) ">
+            <input type="button" id="btn" value="7" onclick="insert(7) ">
+            <input type="button" id="btn" value="/" onclick="insert('/')" >
+        </div>
+        <div class="2ndrow row">
+            <input type="button" id="btn" value="6" onclick="insert(6) ">
+            <input type="button" id="btn" value="5" onclick="insert(5) ">
+            <input type="button" id="btn" value="4" onclick="insert(4) ">
+            <input type="button" id="btn" value="x" onclick="insert('*')">
+        </div>
+        <div class="3rdrow row">
+            <input type="button" id="btn" value="3" onclick="insert(3) ">
+            <input type="button" id="btn" value="2" onclick="insert(2) ">
+            <input type="button" id="btn" value="1" onclick="insert(1) ">
+            <input type="button" id="btn" value="-" onclick="insert('-')">
+        </div>
+        <div class="4throw row">
+            <input type="button" id="btn" value="0" onclick="insert(0) ">
+            <input type="button" id="btn" value="." onclick="insert('.') ">
+            <input type="button" id="btn" value="^" onclick="insert('^')">
+            <input type="button" id="btn" value="+" onclick="insert('+')">
+        </div>
+        <div class="5throw row">
+            <input class="btn"  type="button" id="btn2" value="DEL" onclick="del()">
+            <input class="btn" type="button" id="btn2" value="=" onclick="result()">
+          
+        </div>
+       
+     </div>
+        
+
+ </div>
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="index.js"></script>
+</body>
+</html>
